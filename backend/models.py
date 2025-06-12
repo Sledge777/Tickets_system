@@ -7,8 +7,6 @@ class Ticket(BaseModel):
     spot_id: int
     department: int
     type: str
-    status: str
-    created_at: str # d/m/y time
 
 class Spot(BaseModel):
     id: int

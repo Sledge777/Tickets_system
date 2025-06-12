@@ -20,7 +20,7 @@ def add_ticket(ticket: Ticket):
             spot_id=ticket.spot_id,
             department=ticket.department,
             type=ticket.type,
-            status=ticket.status,
+            status=False,  # Default status is False (not resolved)
             created_at=datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
         )
         session.add(ticket_orm)

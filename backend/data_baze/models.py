@@ -12,7 +12,7 @@ class Ticket_ORM(Base):
     spot_id: Mapped[int] = mapped_column(ForeignKey("spot.id"))
     department: Mapped[int] = mapped_column(ForeignKey("department.id"))
     type: Mapped[str] = mapped_column()
-    status: Mapped[str] = mapped_column()
+    status: Mapped[bool] = mapped_column()
     created_at: Mapped[str] = mapped_column()  # d/m/y time
 
 
