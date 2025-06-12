@@ -1,5 +1,5 @@
 
-from data_baze.requests import create_all_tables
+from data_baze.requests_test import create_all_tables
 
 def start_db():
     try:
